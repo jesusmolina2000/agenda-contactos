@@ -4,19 +4,7 @@ Copiar el repositorio desde jesusmolina2000/agenda-contactos: prueba tecnica par
 
 Tanto la api como el cliente front end están ahí.
 
-Se inicia el git con el comando git init , 
-```
-git add *agregar las carpetas yb archivos al repositorio*
-git commit -m *comits del inicio*
-git branch *es el main del proyecto*
-git remote add origin  *dirección de repositorio url*
-git push -u origin main 
-```
-
-
-para el uso de esta prueba se crea una base de datos en Mysql con el nombre de “directorio”
-
-
+para el uso de esta prueba se crea una base de datos en Mysql con el nombre de “directorio”, recomiendo usar xampp para este proceso iniciando apache y Mysql
 
 ## Estructura de tabla para la tabla `contactos`
 --
@@ -59,9 +47,29 @@ ALTER TABLE `contactos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 ```
+**configuracionde la base de datos en la api**
+
+
 **credenciales para acceder a la base de datos desde la api**
 ```
 User: root
 Password: 
 ¡¡Nota!!: la contraseña o password es la default es decir, un campo vacio.
+```
+**inicializar la api**
+```
+abrir una terminar en la carpeta raiz de la api y escribir lo siguiente
+
+npm run dev
+
+la api escuchara por el puerto 4000
+```
+
+**inicializar el front-end**
+```
+abrir una terminar en la carpeta raiz de el frontend y escribir lo siguiente
+
+npm run start
+
+la vista escuchara por el puerto 3000
 ```
